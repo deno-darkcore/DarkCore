@@ -12,6 +12,12 @@
  * @idea Create a char type and return that?
  */
 
-export function at(str: string, pos: number) {
-	return str[pos - 1]; // Returns 'undefined' when pos doesn't exist
+import { Char } from './types.ts';
+
+export function at(str: string, pos: number): Char | null {
+  if (str[pos] == undefined) { // pos does not exist
+    return null; // null == undefined
+  }
+  const char: Char = new Char(str[pos - 1]);
+  return char;
 }

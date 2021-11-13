@@ -13,6 +13,9 @@
  * @idea Create a char type and return that?
  */
 
-export function last(str: string) {
-	return str[str.length - 1];
+import * as types from './types.ts'
+
+export function last(str: string): types.Char {
+  const char: types.Char = new types.Char(str[str.length - 1]);
+	return char;
 }

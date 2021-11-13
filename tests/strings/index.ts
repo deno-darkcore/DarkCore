@@ -2,18 +2,18 @@ import { assertEquals } from "https://deno.land/std@0.111.0/testing/asserts.ts";
 import * as _ from '../../mod.ts';
 
 Deno.test({name: "Returns first char in string", fn: () => {
-	assertEquals("H", _.strings.first("Hello"));
-	assertEquals("W", _.strings.first("World"));
+	assertEquals("H", _.strings.first("Hello").toString());
+	assertEquals("W", _.strings.first("World").toString());
 }});
 
 Deno.test({name: "Returns last char in string", fn: () => {
-	assertEquals("o", _.strings.last("Hello"));
-	assertEquals("d", _.strings.last("World"));
+	assertEquals("o", _.strings.last("Hello").toString()); // Access toString method for actual char
+	assertEquals("d", _.strings.last("World").toString()); 
 }});
 
 Deno.test({name: "Returns correct position of char", fn: () => {
-	assertEquals("C", _.strings.at("DarkCore", 5));
-	assertEquals(undefined, _.strings.at("DarkCore", 10));
+	assertEquals("C", _.strings.at("DarkCore", 5)?.toString());
+	assertEquals(null, _.strings.at("DarkCore", 10));
 }})
 
 /**

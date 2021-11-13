@@ -10,9 +10,11 @@
  * const myString = "Hello world";
  * console.log(first(myString)); // => H
  * 
- * @idea Create a char type and return that?
  */
 
+import { Char } from './types.ts';
+
 export function first(str: string) {
-	return str[0];
+  const char: Char = new Char(str[0]);
+  return char;
 }

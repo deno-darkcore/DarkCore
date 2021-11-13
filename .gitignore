@@ -3,3 +3,8 @@
 .deno/
 
 index.ts
+.vscode/
+
+
+.DS_Store
+
