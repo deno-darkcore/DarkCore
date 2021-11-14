@@ -1,21 +1,13 @@
+import { Char } from "./types.ts";
+
 /**
- * Returns last char found in string
- * @since 0.0.1 (beta launch)
- * @catagory String 
- * @param {string} The string to find the last char of
- * @returns {string} returns single character string 
- * @see first
- * @example 
- * 
+ * ```ts
  * const myString = "Hello world";
- * console.log(last(myString)); // => d
- * 
- * @idea Create a char type and return that?
+ * console.log(last(myString)); // => 'd'
+ * ```
+ * Prints the last character of a string
  */
 
-import * as types from './types.ts'
-
-export function last(str: string): types.Char {
-  const char: types.Char = new types.Char(str[str.length - 1]);
-	return char;
+export function last(str: string): Char {
+  return new Char(str[str.length - 1]);
 }
