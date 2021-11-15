@@ -2,7 +2,7 @@
 
 .deno/
 
-index.ts
+./index.ts
 .vscode/
 
 

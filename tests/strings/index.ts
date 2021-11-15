@@ -34,4 +34,7 @@ Deno.test({
  * last: {
  *   Fast! Average 0-2 ms!
  * }
+ * at: {
+ *   Average speed. Usually 2-3 ms!
+ * }
  */
