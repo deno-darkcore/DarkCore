@@ -10,6 +10,14 @@ import { Char } from "./src/strings/types.ts";
 import { remove } from "./src/arrays/remove.ts";
 import { at as arr_at } from "./src/arrays/at.ts"
 
+// Loggings
+
+import { err } from "./src/logging/error.ts"
+
+// FS
+
+import { read } from "./src/fs/read.ts"
+
 // Exports
 
 export const strings = {
@@ -24,6 +32,14 @@ export const strings = {
 export const arrays = {
   remove,
   at: arr_at
+}
+
+export const loggings = {
+  err
+}
+
+export const fs = {
+  read
 }
 
 // Language: typescript
