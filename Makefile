@@ -1,3 +1,5 @@
+all:
+	deno test tests/*/*.ts
 test-strings:
 	deno test tests/strings/*.ts
 test-arrays:

@@ -10,3 +10,15 @@ Deno.test({
   }
 });
 
+Deno.test({
+  name: "Gets correct array index",
+  fn: () => {
+    const arr = [1, 2, 3, 4, 5];
+    const res1 = _.arrays.at<number>(arr, 0)
+    const res2 = _.arrays.at<number>(arr, 4)
+    assertEquals(res1, 1)
+    assertEquals(res2, 5)
+    
+  }
+})
+

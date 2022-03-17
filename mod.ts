@@ -8,6 +8,7 @@ import { Char } from "./src/strings/types.ts";
 // Arrays
 
 import { remove } from "./src/arrays/remove.ts";
+import { at as arr_at } from "./src/arrays/at.ts"
 
 // Exports
 
@@ -21,7 +22,8 @@ export const strings = {
 };
 
 export const arrays = {
-  remove
+  remove,
+  at: arr_at
 }
 
 // Language: typescript
