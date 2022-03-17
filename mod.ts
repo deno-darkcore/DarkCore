@@ -17,6 +17,8 @@ import { err } from "./src/logging/error.ts"
 // FS
 
 import { read } from "./src/fs/read.ts"
+import { exists } from "./src/fs/exists.ts"
+import { Path } from "./src/fs/types.ts"
 
 // Exports
 
@@ -39,7 +41,11 @@ export const loggings = {
 }
 
 export const fs = {
-  read
+  types: {
+    Path
+  },
+  read,
+  exists
 }
 
 // Language: typescript
