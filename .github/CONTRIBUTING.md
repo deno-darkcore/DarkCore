@@ -17,7 +17,7 @@ git clone https://github.com/darkdarcool/DarkCore
 Then, create a new branch. Fill in `<username>` with your username.
 
 ```bash
-git checkout  -b fix-<username>
+git checkout -b fix-<username>
 ```
 
 When you've finished with your changes, then use:
@@ -25,7 +25,7 @@ When you've finished with your changes, then use:
 ```bash
 git add . # We reccommend changing it to the files you've changed
 git commit -m <description of what is changed>
-git push
+git push origin fix-<username>
 ```
 
 Then submit a pull request, describing in more detail your changes. If approved, your code will be merged!
