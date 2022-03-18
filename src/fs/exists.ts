@@ -5,6 +5,9 @@ export async function exists(file: Path): Promise<boolean> {
     await Deno.lstat(file.toString());
     return true;
   } catch(err) { // TODO: Add err checker
-    return false;
+    if (err instanceof Deno.errors.NotFound) {
+      return false;
+    }
+    throw err;
   }
 }
