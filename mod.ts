@@ -37,7 +37,9 @@ export const arrays = {
 }
 
 export const loggings = {
-  err
+  error,
+  info,
+  warn
 }
 
 export const fs = {
