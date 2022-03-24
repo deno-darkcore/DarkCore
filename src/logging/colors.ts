@@ -16,7 +16,7 @@ export function colors(color: string): void {
   } else if (color == "yellow") {
     return yellow
   } else if (color == "green") {
-    return yellow
+    return green
   } else if (color == "blue") {
     return blue
   } else if (color == "purple") {
