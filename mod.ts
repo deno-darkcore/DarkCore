@@ -20,6 +20,12 @@ import { warn } from "./src/logging/warning.ts";
 
 import { read } from "./src/fs/read.ts"
 
+/*
+// Colors
+
+import { colors } from "./src/logging/colors.ts";
+*/
+
 // Exports
 
 export const strings = {
@@ -40,6 +46,7 @@ export const loggings = {
   error,
   info,
   warn
+  // color
 }
 
 export const fs = {
