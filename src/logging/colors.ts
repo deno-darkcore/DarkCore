@@ -1,4 +1,4 @@
-const colors = {
+export const colors = {
   black: "\x1b[30m",
   red: "\x1b[31m",
   yellow: "\x1b[33m",
@@ -9,5 +9,3 @@ const colors = {
   white: "\x1b[37m",
   reset: "\x1b[0m"
 };
-
-export colors;
