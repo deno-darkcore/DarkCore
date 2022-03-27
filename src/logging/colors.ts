@@ -8,6 +8,6 @@ const colors = {
   cyan: "\x1b[36m",
   white: "\x1b[37m",
   reset: "\x1b[0m"
-};
+}
 
 export colors;
