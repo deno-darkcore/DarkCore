@@ -19,6 +19,8 @@ import { warn } from "./src/logging/warning.ts";
 // FS
 
 import { read } from "./src/fs/read.ts"
+import { exists } from "./src/fs/exists.ts"
+import { Path } from "./src/fs/types.ts"
 
 /*
 // Colors
@@ -50,7 +52,11 @@ export const loggings = {
 }
 
 export const fs = {
-  read
+  types: {
+    Path
+  },
+  read,
+  exists
 }
 
 // Language: typescript
